@@ -1,0 +1,349 @@
+
+     div.a01 { /*🔴🔴ใช้ขั้นบทความข้างบนไมให้มาชนกับข้างล่าง🔴🔴*/
+     position: static;
+     border: 0px solid rgb(8, 8, 8);
+    } /*🔴*/
+    .acin  { /*🟢🟢🟢🟢เส้นบน🟢🟢🟢🟢เส้นบน🟢🟢🟢🟢เส้นบน🟢🟢🟢🟢*/
+      text-align: center;
+     /* font-family: Arial, sans-serif; /*******ฟอนต์ตัวหนังสือ*********/
+    }
+    .ersA1 {
+      border: 1px solid #486285;
+      padding-top: 0px; /*******ปรับความกว้างกล่องด้านบน*********/
+      margin-top: 0px; /********ระยะห่างขอบด้านบน*************/
+      padding-bottom: 0px; /*******ปรับความกว้างกล่องด้านล่าง*********/
+      margin-bottom: 0px; /******ระยะห่างขอบล่าง***********/ 
+      padding-right: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      margin-left: 0px;
+      background-color: #; /*******สีพื้นหลังข้อความ*********/
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      position: relative; /* สำหรับตำแหน่งของข้อความ */
+      overflow: hidden; /* ป้องกัน scrollbar จากข้อความที่วิ่งเกิน */
+    }
+    @keyframes run-left-and-fader {
+    0% {
+      transform: translateX(0%);
+      opacity: 1;
+            }
+    99% {
+      transform: translateX(-100%);
+      opacity: 1;
+      visibility: visible;
+            }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden;
+            }
+        }
+    .beed1 {
+      font-size: 18px;
+      font-weight: bold;
+      color: white; /* สีข้อความ */
+      padding-top: 4px; /*******ปรับความกว้างกล่องด้านบน*********/
+      padding-bottom: 4px; /*******ปรับความกว้างกล่องด้านล่าง*********/
+      animation: run-left-and-fader 10s linear 10 forwards; /* 2s ต่อรอบ, วน 10 รอบ, คงสถานะสุดท้าย */
+      white-space: nowrap;
+      overflow: hidden;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      display: inline-block; /* สำคัญสำหรับ transform 🔴ปิดได้ถ้าไม่มีข้อความ เพื่อให้เหลือเพียงเส้น */
+      padding-left: 100%; /* 🟢ทำให้ข้อความเริ่มต้นจากนอกจอทางขวา */      
+      }   /*🔴🔴🔴🔴🔴🔴🔴สิ้นสุดเส้นบน*/
+
+
+.btn_010 {  /*🟢🟢🟢🟢🟢🟢ปุ่มเลือกเครื่อเล่น*/
+    background-color: #28691b;
+    margin-top: 2px; /************ขอบด้านบน*************/
+    margin-bottom: 0px; /************ขอบล่าง*************/
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 2px 5px;
+        }
+.btn_010:hover {
+    color: #FFFFFF;
+    background: #6c757d;
+    border: 1px solid #FFFFFF;
+    box-shadow: 4px 4px 5px #CCCCCC;
+  } 
+    .btn_020 {
+    background-color: #a60303;
+    margin-top: 2px; /************ขอบด้านบน*************/
+    margin-bottom: 0px; /************ขอบล่าง*************/
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 2px 5px;
+        }
+.btn_020:hover {
+    color: #ff0000;
+    background: #6c757d;
+    border: 1px solid #FFFFFF;
+    box-shadow: 4px 4px 5px #CCCCCC;
+  } /*🔴🔴🔴🔴🔴🔴สิ้นสุดปุ่มเลือกเครื่อเล่น*/
+
+
+    /**🟢🟢🟢🟢🟢🟢ทำให้ปุ่มจัดวางอยู่แถวเดียว จัดระยะห่างปุ่มแถวเดียว**/
+  .Ae1 {
+   display: flex;
+   justify-content: flex-start; /* หรือจัดตำแหน่งอื่นๆ */    
+   }    
+.day01 {
+  margin-right: 5px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+  /* หรือใช้ margin: 0 5px; เพื่อให้มีระยะห่างด้านข้าง */
+   }
+  /*🔴🔴🔴🔴🔴🔴🔴สิ้นสุดทำให้ปุ่มจัดวางอยู่แถวเดียว**/
+
+
+.bcin { /*🟢🟢🟢🟢เส้นล่าง🟢🟢🟢🟢เส้นล่าง🟢🟢🟢🟢เส้นล่าง🟢🟢🟢🟢*/
+      text-align: center;
+     /* font-family: Arial, sans-serif; /*******ฟอนต์ตัวหนังสือ*********/
+      overflow: hidden; /* ป้องกัน scrollbar จากข้อความที่วิ่งเกิน */
+    }
+    .perq {
+      border: 1px solid #486285;
+      padding-top: 0px; /*******ปรับความกว้างกล่องด้านบน*********/
+      margin-top: 0px; /********ระยะห่างขอบด้านบน*************/
+      padding-bottom: 0px; /*******ปรับความกว้างกล่องด้านล่าง*********/
+      margin-bottom: 0px; /******ระยะห่างขอบล่าง***********/ 
+      padding-right: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      margin-left: 0px;
+      background-color: #; /*******สีพื้นหลังข้อความ*********/
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1); /*****เงาปุ่ม******/
+      position: relative; /* สำหรับตำแหน่งของข้อความ */  
+    }
+    @keyframes run-left-and-fader {
+    0% {
+      transform: translateX(0%);
+      opacity: 1;
+            }
+    99% {
+      transform: translateX(-100%);
+      opacity: 1;
+      visibility: visible;
+            }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden;
+            }
+        }
+    .deed1 {
+      font-size: 18px; /* ทำให้ข้อความใหญ่ขึ้น */
+      font-weight: bold;
+      color: white; /* สีข้อความ */
+      padding-top: 0px; /*******ปรับความกว้างกล่องด้านบน*********/
+      padding-bottom: 0px; /*******ปรับความกว้างกล่องด้านล่าง*********/
+      animation: run-left-and-fader 10s linear 10 forwards; /* 2s ต่อรอบ, วน 10 รอบ, คงสถานะสุดท้าย */
+      white-space: nowrap;
+      overflow: hidden;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+     /*🔴 display: inline-block; /* สำคัญสำหรับ transform 🔴ปิดได้ถ้าไม่มีข้อความ เพื่อให้เหลือเพียงเส้น */
+      padding-left: 100%; /* 🟢ทำให้ข้อความเริ่มต้นจากนอกจอทางขวา */      
+      }  /*🔴🔴🔴🔴🔴🔴🔴🔴🔴สิ้นสุดเส้นล่าง*/
+
+
+.btn_A1 {  /*🟢🟢🟢🟢🟢🟢🟢🟢ปุ่มเลีอกตอน*/
+    background-color: #672200;
+    margin-top: 5px; /************ขอบด้านบน*************/
+    margin-bottom: 10px; /************ขอบล่าง*************/
+    color: white;
+    cursor: pointer;
+    border-radius: 10px; /**ปรับรูปทรงกล่อง**/
+    padding: 2px 5px;
+        }
+.btn_A1:hover {
+    color: #FFFFFF;
+    background: #e88307;
+    border: -1px solid #FFFFFF; /**ปรับตัวเลข+ขึ้นทำให้ปุ่มเคลื่อนไหว**/
+    box-shadow: 4px 4px 5px #CCCCCC; /*********เงาปุ่ม**********/
+  } 
+    .btn_A2 {
+    background-color: #e88307;
+    margin-top: 5px; /************ขอบด้านบน*************/
+    margin-bottom: 10px; /************ขอบล่าง*************/
+    color: white;
+    cursor: pointer;
+    border-radius: 10px; /**ปรับรูปทรงกล่อง**/
+    padding: 2px 5px;
+        }
+.btn_A2:hover {
+    color: #FFFFFF;
+    background: #672200;
+    border: -1px solid #FFFFFF; /**เงาสีชายแดนปุ่ม (+)จะทำให้ผมเคลื่อนไหว**/
+    box-shadow: 4px 4px 5px #CCCCCC; /*********เงาปุ่ม**********/
+  }  /*🔴🔴🔴🔴🔴🔴🔴สิ้นสุดปุ่มเลือกตอน*/
+
+
+  .button-1 {  /*🟢🟢🟢🟢🟢🟢เฟส*/
+    margin-top: 10px; /************ขอบด้านบน*************/
+    margin-bottom: 0px; /************ขอบล่าง*************/
+    background-color: #33577F;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white; /**เงาสีชายแดนปุ่ม อาจจะทำให้ผมเคลื่อนไหว**/
+    border-radius: 10px;
+  }
+  .button-1:hover {
+    background: #5500ff;
+    box-shadow: 0 5px #666; /******เงาปุ่ม*******/
+    transform: translateY(4px);
+  } /*🔴🔴🔴🔴🔴🔴สิ้นสุดปุ่มเฟส*/
+
+
+    .myDiv {  /*🟢🟢🟢ตารางรอบปุ่มตอน*/
+      border: 1px outset #486285; /**เงาสีชายแดนปุ่ม อาจจะทำให้ผมเคลื่อนไหว**/
+      background-color: #28272e;
+      text-align: justify;
+      text-align-last: auto;
+    } /*🔴🔴🔴สิ้นสุดตารางรอบปุ่มตอน*/
+
+
+input.Button {  /*🟢🟢🟢🟢🟢🟢🟢กล่องตัวเลขปุ่ม*/
+      width: 83px;
+      padding: 8px 1px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 110%;
+      background: #282b2b;
+      color: #FFFFFF;
+      border: 2px solid #486285; /**เงาสีชายแดนปุ่ม อาจจะทำให้ผมเคลื่อนไหว**/
+      border-radius: 7px;
+     /* box-shadow: 4px 4px 5px #CCCCCC; /*********เงาปุ่ม**********/
+
+    }
+    input.Button:hover {
+      color: #FFFFFF;
+      background: #006633;
+      border: 1px solid #FFFFFF; /**เงาสีชายแดนปุ่ม อาจจะทำให้ผมเคลื่อนไหว**/
+     /* -moz-box-shadow: 4px 4px 5px #CCCCCC; /*/
+     /* -webkit-box-shadow: 4px 4px 5px #CCCCCC; /*/
+     /* box-shadow: 4px 4px 5px #CCCCCC; /*********เงาปุ่ม**********/
+    } /************🔴🔴🔴🔴🔴🔴สิ้นสุดกล่องตัวเลขปุ่ม******************************************/   
+
+
+    .chatbutton {  /**🟢🟢🟢🟢🟢🟢ปุ่ม messenger Facebook**/
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f7f6f4;
+      border: none;
+      color: #222529;
+      padding: 5px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 20px;
+      transition-duration: 0.4s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .chatbutton:hover {
+      background-color: #eee;
+    }  /***********🔴🔴🔴🔴🔴🔴สิ้นสุดปุ่ม messenger Facebook *************************************/   
+
+
+#A1a1 {   
+    /**********🟢🟢🟢🟢🟢🟢🟢ข้อความแจ้งบอกใต้ตัวเล่น****************/
+    text-align: center;
+    font-size: 17px;
+    color: #c3d2d9; /* เปลี่ยนสีตามต้องการ */
+    animation: fadeIn 1s ease-in-out forwards, fadeOut 2s 80s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  } /**********🔴🔴🔴🔴🔴🔴จบข้อความแจ้งบอกใต้ตัวเล่น****************/
+
+
+   /*  html {
+      color: pink;
+      background-color: black;
+      font-family: sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; 
+    } */
+    .container {
+     position: relative;
+      width: 100%; 
+      max-width: 800px;
+      margin: 0 auto; /* ถ้ามี body display flex แล้วไม่จำเป็นต้องใช้ /**/
+      background-color: #333;
+     /* box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      overflow: hidden; /* */
+      padding: 0;
+      border: none;
+      outline: none;
+      font: inherit;
+      color: #FFF;
+      background: none;
+      z-index: 100;
+                 
+    }
+  /*  #main-video {
+      display: block;
+      width: 100%;
+      height: auto;
+      background-color: #000;
+    }   */
+    .video__button {
+      padding: 0;
+      border: none;
+      outline: none;
+      font: inherit;
+      color: #FFF;
+      background: none;
+      z-index: 100;
+      cursor: pointer;
+    }
+    .video__button svg {
+      pointer-events: none;
+    }
+    .video__button--cast {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease;
+      
+      
+    }
+    /* ซ่อนปุ่ม Cast เมื่อไม่มีอุปกรณ์เชื่อมต่อ */
+    .video__button--cast:not([data-cast-state="CONNECTED"]) {
+      opacity: 0.5;
+    }
+    .video__button--cast[data-cast-state="NO_DEVICES_AVAILABLE"] {
+      display: none;
+    }
+    [aria-hidden="true"] {
+      display: none;
+    }
+  
+
+
